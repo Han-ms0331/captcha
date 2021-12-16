@@ -1,7 +1,7 @@
-const startAuthentication = (videoTag, canvasTag) => {
+const startAuthentication = () => {
     let lmodel;
-    const my_video = document.getElementById(videoTag); //captcha.html 파일에서 웹캠 화면을 띄우는 태그를 저장함
-    const my_canvas = document.getElementById(canvasTag); //captcha.html파일에서 손 모양을 표시하는 박스를 띄우기 위한 캔버스 태그를 저장함
+    const my_video = document.getElementById("video"); //captcha.html 파일에서 웹캠 화면을 띄우는 태그를 저장함
+    const my_canvas = document.getElementById("canvas"); //captcha.html파일에서 손 모양을 표시하는 박스를 띄우기 위한 캔버스 태그를 저장함
     const context = my_canvas.getContext('2d'); //저장한 캔버스 태그를 그림을 2d로 설정
 
     window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;

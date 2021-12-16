@@ -1,9 +1,6 @@
 let lmodel;
 const my_video = document.getElementById('video'); //captcha.html 파일에서 웹캠 화면을 띄우는 태그를 저장함
 const my_canvas = document.getElementById('canvas'); //captcha.html파일에서 손 모양을 표시하는 박스를 띄우기 위한 캔버스 태그를 저장함
-const draw_canvas = document.getElementById('draw'); //captcha.html파일에서 손의 중앙을 따라 그림을 그리는 캔버스 태그를 저장함
-const bt_loading = document.getElementById('btn_loading'); //handtrack모듈을 로딩해오는 버튼 태그를 저장함
-const ctx = draw_canvas.getContext('2d'); //저장한 캔버스 태그를 그림을 2d로 설정
 const context = my_canvas.getContext('2d'); //저장한 캔버스 태그를 그림을 2d로 설정
 
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
