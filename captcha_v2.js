@@ -203,6 +203,5 @@ handTrack.load(modelParams).then((model) => {
     //handtrack 모듈을 불러옴
     lmodel = model;
     // console.log(model.getModelParameters());
-    btn_loading.style.display = 'none';
     start_video();
 });
